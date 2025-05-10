@@ -1,0 +1,32 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+---
+Language: Cpp
+AccessModifierOffset: -2
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Right
+AlignOperands: AlignAfterOperator
+AllowShortFunctionsOnASingleLine: None
+AllowShortCaseLabelsOnASingleLine: true
+BreakBeforeBraces: Stroustrup
+BreakBeforeBinaryOperators: NonAssignment
+BreakTemplateDeclarations: Yes
+ConstructorInitializerIndentWidth: 2
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: <([A-Za-z0-9\Q/-_\E])+>
+    Priority: 3
+  - Regex: <([A-Za-z0-9.\Q/-_\E])+>
+    Priority: 2
+  - Regex: '"([A-Za-z0-9.\Q/-_\E])+"'
+    Priority: 1
+IntegerLiteralSeparator:
+  Binary: 4
+  BinaryMinDigits: 9
+  Decimal: 3
+  DecimalMinDigits: 5
+  Hex: 4
+  HexMinDigits: 9
+PackConstructorInitializers: Never
+QualifierAlignment: Left
